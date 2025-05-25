@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mil Razones por las que Te Amo</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff0f5;
+      color: #4a148c;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #9c27b0;
+      color: white;
+      padding: 2em;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    .nav-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 1em;
+      margin: 2em;
+    }
+
+    .nav-buttons button {
+      padding: 1em 2em;
+      font-size: 1em;
+      background-color: #7b1fa2;
+      color: white;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .nav-buttons button:hover {
+      background-color: #6a1b9a;
+    }
+
+    .section {
+      display: none;
+      padding: 2em;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .section.active {
+      display: block;
+    }
+
+    .category {
+      margin-bottom: 2em;
+    }
+
+    .category h2 {
+      color: #6a1b9a;
+      border-bottom: 2px solid #ba68c8;
+      padding-bottom: 0.5em;
+    }
+
+    .category ul {
+      list-style-type: none;
+      padding-left: 1em;
+    }
+
+    .category li {
+      margin-bottom: 0.5em;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5em;
+      margin-top: 1em;
+    }
+
+    .photo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 300px;
+    }
+
+    .photo img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .photo img:hover {
+      transform: scale(1.05);
+    }
+
+    .photo p {
+      margin-top: 0.5em;
+      font-size: 1em;
+      color: #6a1b9a;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Mil Razones por las que Te Amo</h1>
+</header>
+
+<div class="nav-buttons">
+  <button onclick="mostrarSeccion('razones')">💜 Ver razones</button>
+  <button onclick="mostrarSeccion('recuerdos')">📸 Ver recuerdos</button>
+</div>
+
+<main>
+  <section id="razones" class="section active">
+    <!-- Aquí van todas las categorías que ya escribiste... -->
+    <!-- (omitidas aquí por espacio, pero las debes dejar) -->
+    <div class="category">
+      <h2>💖 Razones emocionales y del corazón</h2>
+      <ul>
+        <li>Porque tu sonrisa me ilumina el día.</li>
+        <li>Porque me haces sentir paz con solo estar cerca.</li>
+        <li>Porque me escuchas incluso cuando no entiendes lo que digo.</li>
+        <li>Porque en tu abrazo cabe mi mundo.</li>
+        <li>Porque contigo me rio de verdad.</li>
+        <li>Porque no necesito fingir nada.</li>
+        <li>Porque me aceptas como eres.</li>
+        <li>Porque celebras mis logros como si fueran tuyos.</li>
+        <li>Porque no le temes a mis días grises.</li>
+        <li>Porque me haces sentir que merezco ser amado.</li>
+      </ul>
+    </div>
+
+    <div class="category">
+      <h2>🧠 Razones de cómo piensas</h2>
+      <ul>
+        <li>Porque tienes ideas que me hacen cuestionar y crecer.</li>
+        <li>Porque ere curiosa por naturaleza.</li>
+        <li>Porque no dejas de aprender.</li>
+        <li>Porque respetas otras opiniones.</li>
+        <li>Porque sabes cuándo hablar y cuándo callar.</li>
+        <li>Porque tu pensar me inspira.</li>
+        <li>Porque puedo hablarte horas sin aburrirte.</li>
+        <li>Porque tienes convicciones firmes pero humildes.</li>
+        <li>Porque sabes admitir tus errores.</li>
+        <li>Porque siempre buscas soluciones, no culpables (aveces).</li>
+      </ul>
+    </div>
+
+    <div class="category">
+      <h2>👐 Razones por tus actos</h2>
+      <ul>
+        <li>Porque me cuidas sin pedirlo.</li>
+        <li>Porque me sorprendes con pequeños detalles.</li>
+        <li>Porque haces cosas que no me gustan solo para verte feliz.</li>
+        <li>Porque respetas mi espacio.</li>
+        <li>Porque defiendes mi nombre incluso cuando no estás.</li>
+        <li>Porque estas cuando más lo necesito.</li>
+        <li>Porque cumples tus promesas.</li>
+        <li>Porque me impulsa, no me frenas.</li>
+        <li>Porque compartes lo tuyo  sin esperar nada.</li>
+        <li>Porque tus acciones valen más que mil palabras.</li>
+      </ul>
+    </div>
+
+    <div class="category">
+      <h2>🪞 Cómo me haces sentir contigo mismo</h2>
+      <ul>
+        <li>Porque sacas mi mejor versión.</li>
+        <li>Porque me das confianza.</li>
+        <li>Porque me haces sentir guapo incluso en pijama.</li>
+        <li>Porque haces que quiera ser una mejor persona.</li>
+        <li>Porque me recuerdas que valgo.</li>
+        <li>Porque me animas a perseguir mis sueños.</li>
+        <li>Porque contigo no hay máscaras.</li>
+        <li>Porque me amas en mis peores días.</li>
+        <li>Porque me haces sentir único.</li>
+        <li>Porque me hace ver la belleza de tus cicatrices.</li>
+      </ul>
+    </div>
+
+    <div class="category">
+      <h2>🌍 Lo que compartimos</h2>
+      <ul>
+        <li>Porque juntos crean recuerdos que te marcan.</li>
+        <li>Porque pueden viajar sin rumbo y aun así disfrutarlo.</li>
+        <li>Porque entienden sus propios códigos y bromas.</li>
+        <li>Porque se ríen hasta de lo más tonto.</li>
+        <li>Porque tienen un lenguaje propio.</li>
+        <li>Porque comparten valores importantes.</li>
+        <li>Porque hacen equipo.</li>
+        <li>Porque juntos se sienten invencibles.</li>
+        <li>Porque saben cuándo ceder y cuándo insistir.</li>
+        <li>Porque su compañía se siente como hogar.</li>
+      </ul>
+    </div>
+
+    <div class="category">
+      <h2>✨ Detalles pequeños pero importantes</h2>
+      <ul>
+        <li>Porque me mandas mensajes solo para saber si comiste.</li>
+        <li>Porque duermes bien solo si estoy bien.</li>
+        <li>Porque me espera cuando  demoro.</li>
+        <li>Porque sabes cómo animarme con música.</li>
+        <li>Porque celebras mi rareza.</li>
+        <li>Porque me enseñas cosas nuevas.</li>
+        <li>Porque bailas conmigo sin música y me hace querer bailar contigo aunque no sepa.</li>
+        <li>Porque haces silencio conmigo sin que sea incómodo.</li>
+      </ul>
+    </div>
+
+    <div class="category">
+      <h2>🔥 Química y atracción</h2>
+      <ul>
+        <li>Porque tu mirada me derrite.</li>
+        <li>Porque tus besos hacen que el tiempo se detenga.</li>
+        <li>Porque entiendes mi cuerpo.</li>
+        <li>Porque solo con rozarme la piel, me aceleras el corazón.</li>
+        <li>Porque me deseas sin condiciones.</li>
+        <li>Porque sabes que no es solo físico, pero lo físico también importa.</li>
+        <li>Porque tu voz me hipnotiza.</li>
+        <li>Porque el deseo va más allá de la rutina.</li>
+        <li>Porque hay pasión incluso en una discusión.</li>
+        <li>Porque me haces sentir deseado.</li>
+      </ul>
+    </div>
+
+    <div class="category">
+      <h2>🎯 Compromiso y futuro</h2>
+      <ul>
+        <li>Porque construimos sueños juntos.</li>
+        <li>Porque planeas conmigo, no sin mi.</li>
+        <li>Porque está dispuesta a crecer conmigo.</li>
+        <li>Porque quieres una vida a mi lado.</li>
+        <li>Porque veo el futuro y estás en él.</li>
+        <li>Porque no huyes cuando hay problemas.</li>
+        <li>Porque está dispuesta a sanar conmigo.</li>
+        <li>Porque crees en el amor a largo plazo.</li>
+        <li>Porque sabes que el amor es una elección diaria.</li>
+        <li>Porque no te vas cuando más lo necesitas.</li>
+      </ul>
+    </div>
+
+    <div class="category">
+      <h2>🎭 Razones únicas</h2>
+      <ul>
+        <li>Porque tu voz es mi sonido favorito.</li>
+        <li>Porque cuando dices mi nombre como nadie más.</li>
+        <li>Porque me entiendes con una sola mirada.</li>
+        <li>Porque recuerdas cosas que hasta que yo mismo olvido.</li>
+        <li>Porque eres mi refugio y mi aventura.</li>
+        <li>Porque llegaste justo cuando no sabía que te necesitabas.</li>
+        <li>Porque sin buscarte, te encontre y te volviste indispensable.</li>
+        <li>Porque me  haces sentir afortunado de amar.</li>
+        <li>Porque contigo, también yo florece, a tu lado.</li>
+      </ul>
+    </div>
+
+    <div class="category">
+      <h2>🌌 Razones que no necesitan explicación</h2>
+      <ul>
+        <li>Porque sí.</li>
+        <li>Porque lo siento en lo más profundo de mi ser y corazón.</li>
+        <li>Porque el amor no siempre se explica.</li>
+        <li>Porque me nace del alma.</li>
+        <li>Porque no puedo imaginar la vida sin ti.</li>
+        <li>Porque el universo se alinea cuando estamos juntos.</li>
+        <li>Porque simplemente... es amor.</li>
+        <li>Porque cada día es una nueva razón.</li>
+        <li>Porque en tu presencia todo tiene sentido.</li>
+        <li>Porque el amor es así: sin razón exacta, pero con mil razones reales.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="recuerdos" class="section">
+    <div class="category">
+      <h2>📸 Recuerdos</h2>
+      <div class="gallery">
+        <div class="photo">
+          <img src="imagenes/foto1.jpg" alt="Recuerdo 1">
+          <p>Nuestra primera cita </p>
+        </div>
+        <div class="photo">
+          <img src="imagenes/foto2.jpg" alt="Recuerdo 2">
+          <p>Nuestro Primer viaje a Colombia Juntos </p>
+        </div>
+        <div class="photo">
+          <img src="imagenes/foto3.jpg" alt="Recuerdo 3">
+          <p>Primera Vez en la Playa </p>
+          <div class="photo">
+            <img src="imagenes/foto4.jpg" alt="Recuerdo 4">
+            <p>Nuestra Primera vez juntos en carnavales </p>
+          </div>
+          <div class="photo">
+            <img src="imagenes/foto5.jpg" alt="Recuerdo 5">
+            <p>Nuestra Primera Navidad </p>
+          </div>
+          <div class="photo">
+            <img src="imagenes/foto6.jpg" alt="Recuerdo 6">
+            <p>Mi primer retrato de ti </p>
+          </div>
+          <div class="photo">
+            <img src="imagenes/foto7.jpg" alt="Recuerdo 7">
+            <p>Primer cumple juntos</p>
+          </div>
+          <div class="photo">
+            <img src="imagenes/foto8.jpg" alt="Recuerdo 8">
+            <p>Paseando a Luke </p>
+          </div>
+          <div class="photo">
+            <img src="imagenes/foto9.jpg" alt="Recuerdo 9">
+            <p>Primera salida con tus pas </p>
+          </div>
+          <div class="photo">
+            <img src="imagenes/foto10.jpg" alt="Recuerdo 10">
+            <p>Primera foto Oficial contigo</p>
+          </div>
+          <div class="photo">
+            <img src="imagenes/foto11.jpg" alt="Recuerdo 11">
+            <p>Nuestra Graduación</p>
+          </div>
+          <div class="photo">
+            <img src="imagenes/foto12.jpg" alt="Recuerdo 12">
+            <p>Regalo sorpresa (De locos) </p>
+          </div>
+          <div class="photo">
+            <img src="imagenes/foto13.jpg" alt="Recuerdo 13">
+            <p>Primera Visita a TU iglesia</p>
+          </div>
+        </div>
+      </div>
+  </section>
+</main>
+
+<script>
+  function mostrarSeccion(id) {
+    document.querySelectorAll('.section').forEach(seccion => {
+      seccion.classList.remove('active');
+    });
+    document.getElementById(id).classList.add('active');
+  }
+</script>
+
+</body>
+</html>
